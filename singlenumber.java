@@ -1,3 +1,5 @@
+package Arrays;
+
 public class singlenumber {
     public static void main(String[] args) {
         int[] arr={2,2,1};
