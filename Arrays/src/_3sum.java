@@ -1,6 +1,6 @@
 import java.util.*;
 import java.util.ArrayList;
-import java.util.*;
+
     public class _3sum {
         public static void main(String[] args) {
             int[] arr={-1,0,1,2,-1,-4};
