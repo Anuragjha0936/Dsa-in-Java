@@ -1,6 +1,4 @@
 import java.util.Arrays;
-
-
 public class Agressive_cow {
     public static void main(String[] args) {
         int[] arr={4, 2, 1, 3, 6};
