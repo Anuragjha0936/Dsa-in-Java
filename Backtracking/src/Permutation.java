@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Permutation {
     public static void main(String[] args) {
-        int[] arr={1,1,3};
+        int[] arr={1,2,3};
         List<List<Integer>> list=new ArrayList<>();
         ArrayList<Integer> p=new ArrayList<>();
         boolean[] visit=new boolean[arr.length];
