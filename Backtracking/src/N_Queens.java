@@ -1,12 +1,13 @@
+import java.util.Arrays;
+
 public class N_Queens {
     public static void main(String[] args) {
-        int n=1;
+        int n=4;
         char[][] board=new char[n][n];
 
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                board[i][j]='X';
-            }
+//        to fill the array
+        for(char[] row:board){
+            Arrays.fill(row,'.');
         }
         func(board,0);
     }
@@ -55,24 +56,6 @@ public class N_Queens {
         while(temp_row >=0 && temp_col <= board.length-1){
             if(board[temp_row][temp_col]=='Q') return false;
             temp_row--;
-            temp_col++;
-        }
-
-        temp_row=row;
-        temp_col=col;
-//     South-west diagonal
-        while(temp_row <= board.length-1 && temp_col >=0){
-            if(board[temp_row][temp_col]=='Q') return false;
-            temp_row++;
-            temp_col--;
-        }
-
-        temp_row=row;
-        temp_col=col;
-//        south-east diagonal
-        while(temp_row <= board.length-1 && temp_col<= board.length-1){
-            if(board[temp_row][temp_col]=='Q') return false;
-            temp_row++;
             temp_col++;
         }
 
