@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LCS {
@@ -47,10 +48,13 @@ public class LCS {
                 }
                 else{
                     dp[i][j]=dp[i-1][j-1]+1;
+                    
                 }
             }
         }
+
         return dp[text1.length()][text2.length()];
+
     }
 
 }
