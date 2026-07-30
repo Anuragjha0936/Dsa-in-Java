@@ -9,7 +9,7 @@ public class Print_LCS {
         int i=n;
         int j=m;
         StringBuilder sb=new StringBuilder();
-        while(j>0){
+        while(i>0 && j>0){
             if(text1.charAt(i-1)!=text2.charAt(j-1)){
                 if(dp[i][j-1]>=dp[i-1][j]){
                     j--;
